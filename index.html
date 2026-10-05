@@ -271,7 +271,7 @@ function show(id){screens.forEach(s=>$(s).hidden=s!==id);if(id!=="game")stopLoop
 
 /* ---------- shared leaderboard (Google Sheet via Apps Script) ---------- */
 // Paste your Apps Script web app URL between the quotes (it ends in /exec).
-const SCRIPT_URL="";
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbyw5mTL_38Tdrgm0NqWnJjDVruxrizaUz1MLKUJvfKpef-Mom2wa6Ap99g6iDBCn7arAA/exec";
 let lastResult=null, rows=[], dbState=SCRIPT_URL?"connecting":"off", pollT=null, gameStart=0;
 async function fetchTop(){
   if(!SCRIPT_URL)return;
